@@ -1,192 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Pagina de Ssegundas Op</title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Pagina2daOp</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Iconos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
 </head>
-
-<body class="p-5">
-  <div class="conainer">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">Comentarios</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://plus.unsplash.com/premium_photo-1675762226695-bec5748d4d00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGFibGVybyUyMGRlJTIwYWplZHJlenxlbnwwfHwwfHx8MA%3D%3D"
-            class="d-block w-75" alt="Ajedrez.">
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://images.unsplash.com/photo-1543338227-5cab7f6c9af3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="d-block w-75" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://images.unsplash.com/photo-1616996721926-8166c3f7acd5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            class="d-block w-75" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-utensils me-2"></i>ReceMos
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  <div class="row mt-4">
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://digital-game-technology-2021.imgix.net/media/Products/Non-Electronic-Chess/DGT-Walnut-Chess-Board-670x646.jpg?auto=format&crop=focalpoint&domain=digital-game-technology-2021.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&h=500&ixlib=php-3.3.1&q=82&w=700"
-          class="card-img-top" alt="..." />
-        <div class="card-body text-center">
-          <p class="card-text">
-            Los tableros DGT incorporan sensores electrónicos que registran los
-            movimientos de las piezas.
-          </p>
-          <a href="inf1.html" class="btn btn-warning">Más Información</a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio"><i class="fas fa-home me-1"></i> Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#recetas"><i class="fas fa-book me-1"></i> Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#categorias"><i class="fas fa-tags me-1"></i> Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto"><i class="fas fa-envelope me-1"></i> Contacto</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem">
-        <img src="https://m.media-amazon.com/images/I/61aREufP4pS.jpg" class="card-img-top" alt="..." />
-        <div class="card-body text-center">
-          <p class="card-text">
-            Estos juegos de ajedrez suelen ser elaborados por artesanos en el
-            estado de Chiapas, México.
-          </p>
-          <a href="inf2.html" class="btn btn-warning">Más Información</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://www.ajedrezdemadera.com/images/Foto%20szachow/DCP07H/DCP07H%20on%20DMV03A%20GREEN%20resized.jpg"
-          class="card-img-top" alt="..." />
-        <div class="card-body text-center">
-          <p class="card-text">
-            El plástico es un material duradero y resistente, lo que hace que
-            estos juegos sean adecuados para uso frecuente.
-          </p>
-          <a href="inf3.html" class="btn btn-warning">Más Información</a>
-        </div>
-      </div>
-    </div>
-    <!--CIERRE DEL PRIMER ROW -->
-    <!--INICIO DEL SEGUNDO ROW -->
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem">
-          <img
-            src="https://digital-game-technology-2021.imgix.net/media/Products/Non-Electronic-Chess/DGT-Walnut-Chess-Board-670x646.jpg?auto=format&crop=focalpoint&domain=digital-game-technology-2021.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&h=500&ixlib=php-3.3.1&q=82&w=700"
-            class="card-img-top" alt="..." />
-          <div class="card-body text-center">
-            <p class="card-text">
-              Los tableros DGT incorporan sensores electrónicos que registran
-              los movimientos de las piezas.
-            </p>
-            <button class="btn btn-warning">Mas Informacion</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem">
-          <img src="https://m.media-amazon.com/images/I/61aREufP4pS.jpg" class="card-img-top" alt="..." />
-          <div class="card-body text-center">
-            <p class="card-text">
-              Estos juegos de ajedrez suelen ser elaborados por artesanos en el
-              estado de Chiapas, México.
-            </p>
-            <button class="btn btn-warning">Mas Informacion</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem">
-          <img
-            src="https://www.ajedrezdemadera.com/images/Foto%20szachow/DCP07H/DCP07H%20on%20DMV03A%20GREEN%20resized.jpg"
-            class="card-img-top" alt="..." />
-          <div class="card-body text-center">
-            <p class="card-text">
-              El plástico es un material duradero y resistente, lo que hace que
-              estos juegos sean adecuados para uso frecuente.
-            </p>
-            <button class="btn btn-warning">Mas Informacion</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--CIERRE DEL PRIMER ROW -->
-  </div>
-  <div class="col-md-5">
-    <div class="card">
-      <div style="background-color: rgb(0, 0, 255); color: #ffffff;" class="card-header">
-        <h6 class="text-center">REGUISTRO</h6>
-      </div>
-      <div class="card-body">
-        <form action="/submit" method="post">
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" name="name" required><br><br>
-
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required><br><br>
-
-          <label for="city">Ciudad:</label>
-          <select id="city" name="city">
-            <option value="">Ciudad de México (CDMX)</option>
-            <option value="">Oaxaca (Oaxaca)</option>
-            <option value="">Puebla (Puebla)</option>
-            <option value="">Monterrey (Nuevo León)</option>
-            <option value="">León (Guanajuato) </option>
-            <option value="">Morelia (Michoacán)</option>
-            <option value="">Cancún (Quintana Roo)</option>
-            <option value="">Tijuana (Baja California)</option>
-          </select><br><br>
-
-          <button class="btn btn-primary"><i class="fas fa-thumbs-up"></i> Enviar</button>
-
-        </form>
-      </div>
-    </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  </nav>
+  
 </body>
-
 </html>
