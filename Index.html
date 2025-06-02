@@ -58,7 +58,7 @@
           <div class="card-body">
             <h5 class="card-title">Pasta Alfredo</h5>
             <p class="card-text">Deliciosa pasta con salsa cremosa de queso parmesano.</p>
-            <a href="#" class="btn btn-success">Ver receta</a>
+            <a href="EnsaladaCesar.html" class="btn btn-success">Ver receta</a>
           </div>
         </div>
       </div>
@@ -89,7 +89,78 @@
     </div>
   </section>
 
+<!-- Categorías -->
+  <section class="container mb-5" id="categorias">
+    <h2 class="text-center mb-4"><i class="fas fa-tags me-2"></i>Categorías</h2>
+    <div class="row">
+      <div class="col-md-3 mb-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <i class="fas fa-bread-slice fa-3x mb-3 text-warning"></i>
+            <h5>Desayunos</h5>
+            <p>15 recetas</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <i class="fas fa-drumstick-bite fa-3x mb-3 text-danger"></i>
+            <h5>Carnes</h5>
+            <p>22 recetas</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <i class="fas fa-fish fa-3x mb-3 text-primary"></i>
+            <h5>Pescados</h5>
+            <p>18 recetas</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <i class="fas fa-ice-cream fa-3x mb-3 text-info"></i>
+            <h5>Postres</h5>
+            <p>30 recetas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Formulario de Contacto -->
+  <section class="container mb-5" id="contacto">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card shadow">
+          <div class="card-header bg-success text-white">
+            <h4 class="mb-0"><i class="fas fa-envelope me-2"></i>Contáctanos</h4>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-success"><i class="fas fa-paper-plane me-2"></i>Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-4">
@@ -104,3 +175,28 @@
   </footer>
 </body>
 </html>
+
+<style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .recipe-card {
+      transition: transform 0.3s;
+      margin-bottom: 20px;
+    }
+    .recipe-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .navbar {
+      border-bottom: 3px solid #ffc107;
+    }
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 0;
+      margin-bottom: 30px;
+    }
+  </style>
