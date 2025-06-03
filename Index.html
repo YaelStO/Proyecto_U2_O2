@@ -174,33 +174,59 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-      <div class="mb-3">
+  <footer class="bg-dark text-white py-4 mt-auto"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <p class="mb-0">© 2025 Recetas Caseras - Todos los derechos reservados</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
         <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f fa-lg"></i></a>
         <a href="#" class="text-white mx-2"><i class="fab fa-instagram fa-lg"></i></a>
         <a href="#" class="text-white mx-2"><i class="fab fa-pinterest fa-lg"></i></a>
       </div>
-      <p class="mb-0">© 2025 Recetas Caseras - Todos los derechos reservados</p>
     </div>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>
 
 <style>
+  
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; 
+}
+
+footer {
+  background-color: #343a40;
+  width: 100%;
+}
     body {
       background-color: #f8f9fa;
     }
+    
     .recipe-card {
       transition: transform 0.3s;
       margin-bottom: 20px;
     }
     .recipe-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 20px rgb(20, 248, 39);
     }
     .navbar {
-      border-bottom: 3px solid #ffc107;
+      border-bottom: 3px solid #ffffffe1;
     }
     .hero-section {
       background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80');
