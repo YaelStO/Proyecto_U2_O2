@@ -39,6 +39,10 @@
 </nav>
 
   <section class="container my-5">
+       <a class="btn btn-success  rounded-pill px-6" href="index.html">
+  <i class="fas fa-arrow-left me-"></i>
+  <span class="fw-medium">Volver al inicio</span>
+</a>
     <h1 class="text-center text-success mb-4"><i class="fas fa-bowl-food me-2"></i>Recetas de Pasta</h1>
     <div class="row">
       <div class="col-md-6">
@@ -125,5 +129,23 @@ footer {
     body {
       background-color: #f8f9fa;
     }
+    .dropdown-item:hover {
+    background-color: #198754; 
+    color: white !important;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+  }
+  
+ 
+  .nav-link.dropdown-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+  
+  
+  .dropdown-item:hover i {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
     </style>
 </html>

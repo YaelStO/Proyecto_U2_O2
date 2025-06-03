@@ -28,28 +28,63 @@
       object-fit: cover;
       border-radius: 5px;
     }
+    .dropdown-item:hover {
+    background-color: #198754; 
+    color: white !important;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+  }
+  
+ 
+  .nav-link.dropdown-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+  
+  
+  .dropdown-item:hover i {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
   </style>
 </head>
 <body>
+    <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <i class="fas fa-utensils me-2"></i>ReceMos
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="fas fa-arrow-left me-1"></i>Volver al inicio</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="fas fa-utensils me-2"></i>ReceMos
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        
+        <li class="nav-item dropdown"> 
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+            <i class="fas fa-bars me-1"></i> Menú
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">  <!-- Menú desplegable -->
+            <li><a class="dropdown-item" href="index.html"><i class="fas fa-home me-2"></i>Inicio</a></li>
+            <li><a class="dropdown-item" href="index.html#destacado"><i class="fas fa-star me-2"></i>Destacados</a></li>
+            <li><a class="dropdown-item" href="index.html#categorias"><i class="fas fa-list me-2"></i>Categorías</a></li>
+            <li><a class="dropdown-item" href="index.html#Opinion"><i class="fas fa-envelope me-2"></i>Opiniones</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <main class="container my-5">
+       <a class="btn btn-success  rounded-pill px-6" href="index.html">
+  <i class="fas fa-arrow-left me-"></i>
+  <span class="fw-medium">Volver al inicio</span>
+</a>
     <div class="row">
       <div class="col-lg-6">
         <h1 class="text-success mb-4">Tacos de Tinga de Pollo</h1>
