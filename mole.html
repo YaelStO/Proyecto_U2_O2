@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mole Oaxaqueño Tradicional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
+    .prep-time {
+      background-color: #198754;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    .recipe-img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .dropdown-item:hover {
+      background-color: #198754; 
+      color: white !important;
+      transform: translateX(5px);
+      transition: all 0.3s ease;
+    }
+    .nav-link.dropdown-toggle:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+    .dropdown-item:hover i {
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+    .special-note {
+      background-color: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-utensils me-2"></i>ReceMos
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-bars me-1"></i> Menú
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="index.html"><i class="fas fa-home me-2"></i>Inicio</a></li>
+              <li><a class="dropdown-item" href="index.html#destacado"><i class="fas fa-star me-2"></i>Destacados</a></li>
+              <li><a class="dropdown-item" href="index.html#categorias"><i class="fas fa-list me-2"></i>Categorías</a></li>
+              <li><a class="dropdown-item" href="index.html#Opinion"><i class="fas fa-envelope me-2"></i>Opiniones</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <a class="btn btn-success rounded-pill px-6" href="index.html">
+      <i class="fas fa-arrow-left me-"></i>
+      <span class="fw-medium">Volver al inicio</span>
+    </a>
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="text-success mb-4">Mole Oaxaqueño Tradicional</h1>
+        <span class="prep-time mb-3 d-inline-block"><i class="fas fa-clock me-1"></i> 3 horas 30 min</span>
+        
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="card-title text-success"><i class="fas fa-shopping-basket me-2"></i>Ingredientes</h3>
+            <h5 class="mt-3 text-muted">Para el mole:</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">6 chiles mulatos limpios y desvenados</li>
+              <li class="list-group-item">6 chiles pasilla oaxaqueños</li>
+              <li class="list-group-item">4 chiles anchos</li>
+              <li class="list-group-item">1/2 kg de jitomate</li>
+              <li class="list-group-item">1 cebolla blanca mediana</li>
+              <li class="list-group-item">4 dientes de ajo</li>
+              <li class="list-group-item">1 plátano macho maduro</li>
+              <li class="list-group-item">1/4 taza de almendras</li>
+              <li class="list-group-item">1/4 taza de cacahuates</li>
+              <li class="list-group-item">1/4 taza de pasitas</li>
+              <li class="list-group-item">2 clavos de olor</li>
+              <li class="list-group-item">1 raja de canela</li>
+              <li class="list-group-item">1 cucharadita de comino</li>
+              <li class="list-group-item">1 cucharadita de pimienta negra</li>
+              <li class="list-group-item">1 bolillo (pan francés) en rebanadas</li>
+              <li class="list-group-item">1 tortilla dura</li>
+              <li class="list-group-item">1 tableta de chocolate oaxaqueño (90g)</li>
+              <li class="list-group-item">3 cucharadas de manteca de cerdo</li>
+              <li class="list-group-item">3 litros de caldo de pollo</li>
+              <li class="list-group-item">Sal al gusto</li>
+            </ul>
+            
+            <h5 class="mt-3 text-muted">Para servir:</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1 pollo cocido y desmenuzado</li>
+              <li class="list-group-item">Ajonjolí tostado</li>
+              <li class="list-group-item">Cebolla fileteada</li>
+              <li class="list-group-item">Tortillas calientes</li>
+              <li class="list-group-item">Arroz blanco</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6">
+        <img src="https://cdn0.recetasgratis.net/es/posts/5/4/6/mole_negro_76645_orig.jpg" class="img-fluid rounded recipe-img" alt="Mole Oaxaqueño Tradicional">
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title text-success"><i class="fas fa-mortar-pestle me-2"></i>Preparación</h3>
+            <ol class="list-group list-group-numbered list-group-flush">
+              <li class="list-group-item">
+                <strong>Tostar los ingredientes:</strong> En un comal, tostar ligeramente los chiles (sin quemarlos), la cebolla, ajo, jitomate, plátano, almendras, cacahuates, pan, tortilla y especias por separado.
+              </li>
+              <li class="list-group-item">
+                <strong>Hidratar chiles:</strong> Remojar los chiles en agua caliente por 15 minutos hasta que se ablanden. Escurrir reservando el agua.
+              </li>
+              <li class="list-group-item">
+                <strong>Licuar:</strong> En licuadora, procesar los chiles con un poco del agua de remojo. Añadir el jitomate, cebolla, ajo, plátano, frutos secos, especias, pan y tortilla. Licuar añadiendo caldo poco a poco hasta obtener una mezcla homogénea.
+              </li>
+              <li class="list-group-item">
+                <strong>Colar:</strong> Pasar la mezcla por un colador fino para eliminar grumos, presionando con una cuchara.
+              </li>
+              <li class="list-group-item">
+                <strong>Freír la pasta:</strong> En una cazuela grande, calentar la manteca y freír la pasta de mole moviendo constantemente con pala de madera por 15 minutos hasta que cambie a color oscuro.
+              </li>
+              <li class="list-group-item">
+                <strong>Cocer el mole:</strong> Agregar el caldo restante y el chocolate. Cocinar a fuego bajo por 2 horas, revolviendo cada 15 minutos para evitar que se pegue. Rectificar sal.
+              </li>
+              <li class="list-group-item">
+                <strong>Textura final:</strong> El mole debe tener consistencia espesa pero fluida. Si queda muy espeso, agregar más caldo caliente.
+              </li>
+            </ol>
+            
+            <h4 class="mt-4 text-success"><i class="fas fa-utensils me-2"></i>Presentación</h4>
+            <p>Servir el pollo bañado con el mole caliente, espolvorear ajonjolí y decorar con cebolla fileteada. Acompañar con arroz blanco y tortillas calientes.</p>
+            
+            <h4 class="mt-4 text-success"><i class="fas fa-lightbulb me-2"></i>Variaciones</h4>
+            <p><strong>Mole negro:</strong> Añade chiles chilhuacle negro y deja que los ingredientes se tuesten más para obtener el color característico.</p>
+            <p><strong>Vegetariano:</strong> Sustituye el caldo de pollo por caldo de verduras y sirve con hongos salteados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 Recetas Caseras - Todos los derechos reservados</p>
+      <p class="mb-0"><small>Receta tradicional compartida por cocineras oaxaqueñas</small></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
