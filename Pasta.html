@@ -3,149 +3,135 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Recetas de Pasta</title>
+  <title>Pasta Alfredo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
+    .prep-time {
+      background-color: #198754;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    .recipe-img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .dropdown-item:hover {
+      background-color: #198754; 
+      color: white !important;
+      transform: translateX(5px);
+      transition: all 0.3s ease;
+    }
+    .nav-link.dropdown-toggle:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+    .dropdown-item:hover i {
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <i class="fas fa-utensils me-2"></i>ReceMos
-    </a>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <!-- Botón de Menú que despliega opciones -->
-        <li class="nav-item dropdown">  <!-- Agregada clase dropdown -->
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
-            <i class="fas fa-bars me-1"></i> Menú
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">  <!-- Menú desplegable -->
-            <li><a class="dropdown-item" href="index.html"><i class="fas fa-home me-2"></i>Inicio</a></li>
-            <li><a class="dropdown-item" href="index.html#destacado"><i class="fas fa-star me-2"></i>Destacados</a></li>
-            <li><a class="dropdown-item" href="index.html#categorias"><i class="fas fa-list me-2"></i>Categorías</a></li>
-            <li><a class="dropdown-item" href="index.html#Opinion"><i class="fas fa-envelope me-2"></i>Opiniones</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  <section class="container my-5">
-       <a class="btn btn-success  rounded-pill px-6" href="index.html">
-  <i class="fas fa-arrow-left me-"></i>
-  <span class="fw-medium">Volver al inicio</span>
-</a>
-    <h1 class="text-center text-success mb-4"><i class="fas fa-bowl-food me-2"></i>Recetas de Pasta</h1>
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Pasta Alfredo</h3>
-        <p>Ingredientes: pasta fettuccine, mantequilla, crema, queso parmesano.</p>
-        <p>Preparación: Cocina la pasta. En sartén, derrite mantequilla y añade crema y parmesano. Mezcla con la pasta.</p>
-      </div>
-      <div class="col-md-6">
-        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?ixlib=rb-4.0.3&auto=format&fit=crop&w=735&q=80" class="img-fluid rounded" alt="Pasta Alfredo">
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-dark text-white py-4 mt-auto">
-  <div class="container">
-    <div class="row">
-      <!-- Columna de Contacto -->
-      <div class="col-md-4 mb-4 mb-md-0">
-        <h5 class="text-success mb-3">Contacto</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2">
-            <i class="fas fa-map-marker-alt text-success me-2"></i>
-            Av. Recetas 123, Ciudad Gourmet
-          </li>
-          <li class="mb-2">
-            <i class="fas fa-phone-alt text-success me-2"></i>
-            +52 55 1234 5678
-          </li>
-          <li class="mb-2">
-            <i class="fas fa-envelope text-success me-2"></i>
-            contacto@recetasmos.com
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="fas fa-utensils me-2"></i>ReceMos
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              <i class="fas fa-bars me-1"></i> Menú
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="index.html"><i class="fas fa-home me-2"></i>Inicio</a></li>
+              <li><a class="dropdown-item" href="index.html#destacado"><i class="fas fa-star me-2"></i>Destacados</a></li>
+              <li><a class="dropdown-item" href="index.html#categorias"><i class="fas fa-list me-2"></i>Categorías</a></li>
+              <li><a class="dropdown-item" href="index.html#Opinion"><i class="fas fa-envelope me-2"></i>Opiniones</a></li>
+            </ul>
           </li>
         </ul>
       </div>
-         <div class="col-md-4">
-        <h5 class="text-success mb-3">Síguenos</h5>
-        <div class="mb-3">
-          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-pinterest"></i></a>
-          <a href="#" class="text-white me-3 fs-5"><i class="fab fa-youtube"></i></a>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <a class="btn btn-success rounded-pill px-6" href="index.html">
+      <i class="fas fa-arrow-left me-1"></i>
+      <span class="fw-medium">Volver al inicio</span>
+    </a>
+
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 class="text-success mb-4">Pasta Alfredo</h1>
+        <span class="prep-time mb-3 d-inline-block"><i class="fas fa-clock me-1"></i> 30 minutos</span>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h3 class="card-title text-success"><i class="fas fa-shopping-basket me-2"></i>Ingredientes</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">400 g de pasta fettuccine</li>
+              <li class="list-group-item">2 cucharadas de mantequilla</li>
+              <li class="list-group-item">1 taza de crema para batir</li>
+              <li class="list-group-item">1 taza de queso parmesano rallado</li>
+              <li class="list-group-item">2 dientes de ajo picados</li>
+              <li class="list-group-item">Sal y pimienta al gusto</li>
+              <li class="list-group-item">Perejil fresco picado (opcional)</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <p class="mb-0">Suscríbete a nuestro newsletter</p>
-          
-        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"" class="img-fluid rounded recipe-img" alt="Pasta Alfredo">
       </div>
     </div>
 
-      <div class="row mt-4">
-      <div class="col-12 text-center">
-        <p class="mb-0 small">
-          © 2025 Recetas Caseras - Todos los derechos reservados | 
-          <a href="#" class="text-white text-decoration-none">Política de Privacidad</a> | 
-          <a href="#" class="text-white text-decoration-none">Términos de Servicio</a>
-        </p>
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title text-success"><i class="fas fa-mortar-pestle me-2"></i>Preparación</h3>
+            <ol class="list-group list-group-numbered list-group-flush">
+              <li class="list-group-item">Cocina la pasta en agua con sal según las instrucciones del paquete.</li>
+              <li class="list-group-item">Derrite la mantequilla en una sartén y sofríe el ajo.</li>
+              <li class="list-group-item">Agrega la crema y cocina a fuego medio bajo por 5 minutos.</li>
+              <li class="list-group-item">Incorpora el queso parmesano, sal y pimienta. Mezcla hasta integrar.</li>
+              <li class="list-group-item">Agrega la pasta cocida a la salsa y mezcla bien.</li>
+              <li class="list-group-item">Sirve caliente con perejil espolvoreado por encima.</li>
+            </ol>
+
+            <h4 class="mt-4 text-success"><i class="fas fa-lightbulb me-2"></i>Consejo del Chef</h4>
+            <p>Si deseas una versión más ligera, sustituye la crema por leche evaporada.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 Recetas Caseras - Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<style>
-  
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1; 
-}
-
-footer {
-  background-color: #343a40;
-  width: 100%;
-}
-    body {
-      background-color: #f8f9fa;
-    }
-    .dropdown-item:hover {
-    background-color: #198754; 
-    color: white !important;
-    transform: translateX(5px);
-    transition: all 0.3s ease;
-  }
-  
- 
-  .nav-link.dropdown-toggle:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-  }
-  
-  
-  .dropdown-item:hover i {
-    transform: scale(1.2);
-    transition: all 0.3s ease;
-  }
-    </style>
 </html>
